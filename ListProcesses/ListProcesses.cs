@@ -21,7 +21,7 @@ namespace MyService
 			IEnumerable<CimInstance> processes = Session.EnumerateInstances(Namespace, ClassName);
 			foreach (CimInstance process in processes)
 			{
-				Console.WriteLine("{0} {1} {2} ",
+				Console.WriteLine("{0} {1} {2} {3}",
 								  process.CimInstanceProperties["Name"],
 				                  process.CimInstanceProperties["ParentProcessId"],
 			                      process.CimInstanceProperties["ProcessId"],
